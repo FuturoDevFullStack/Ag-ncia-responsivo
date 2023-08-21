@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(234,234,234,255);
+    overflow-x: hidden;
+}
+.limite{
+    width: 80%;
+    margin: 0 10%;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.topo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #5d15d1;
+    height: 55px;
+}
+.topo img{
+    width: 32px;
+    height: 32px;
+}
+.background{
+    background-image: url(img/bahia.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo img{
+    width: 20px;
+    height: 20px;
+    rotate: calc(-45deg);
+}
+.titulo{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d15d1;
+    padding: 1%;
+    font-weight: bold;
+}
+.formulario{
+    padding: 50px 0;
+}
+.formulario-conteudo{
+    background-color: #fff;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    width: 100%;
+    padding: 1% 0;
+}
+label{
+    margin: 2% 0;
+}
+input{
+    padding: 1%;
+    margin: 2% 0;
+}
+.content input{
+    width: 100%;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.volta{
+    width: 48%;
+}
+.volta input{
+    width: 100%;
+}
+.ida{
+
+    width: 48%;
+}
+.ida input{
+    width: 100%;
+}
+.local{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.local div{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.quarto{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#titulo-quarto{
+    margin: 2% 0;
+}
+.quarto div{
+    margin: 5% 0;
+}
+.preferencia{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.preferencia div{
+    margin: 5% 0;
+}
+button{
+    background-color: #5d15d1;
+    padding: 1%;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+.ofertas{
+    margin: 5% 10%;
+}
+.ofertas h1{
+    padding-top: 2%;
+}
+.galeria-1{
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+.destaque{
+    width: calc(50% - 10px);
+    height: 100%;
+    position: relative;
+    border: 1px solid;
+}
+.destaque img{
+    width: 100%;
+    height: 100%;
+}
+.destaque figure{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.destaque figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+}
+.comum{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.comum div{
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    border: 1px solid;
+    position: relative;
+}
+.comum div img{
+    width: 100%;
+    height: 100%;
+}
+.comum div figure{
+    width: 100%;
+    height: 100%;
+}
+.comum div figcaption{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0 0 0 / 50%);
+    color: #fff;
+}
+.galeria-2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 2% 0;
+    justify-content: space-between;
+}
+.galeria-2 div{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+}
+.galeria-2 figure{
+    width: 100%;
+}
+.galeria-2 img{
+    width: 100%;
+}
+.galeria-2 figcaption{
+    background-color: #fff;
+    padding: 20px 2px;
+    height: auto;
+}
+.galeria-2 figcaption h5{
+    font-weight: bold;
+}
+footer{
+    background-color: #5d15d1;
+    margin-top: 50px;
+}
+footer p:last-child{
+    text-align: center;
+    color: #fff;
+}
+.rodape{
+    width: 100%;
+    display: flex;
+    color: #fff;
+    margin: 0;
+}
+.rodape-conteudo{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+.rodape h2{
+    font-size: 1rem;
+    text-align: center;
+}
+.rodape-conteudo div{
+    display: flex;
+    padding: 2% 0;
+    gap: 10px;
+    align-items: center;
+
+}
+.rodape-conteudo img{
+    width: 20px;
+}
+
+/* responsividade para telas até 540px */
+
+@media (max-width: 540px){
+    .limite{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario h2{
+        font-weight: 500;
+        margin: 0 4%;
+    }
+    .formulario p{
+        font-weight: 400;
+    }
+    .formulario label{
+        font-weight: 600;
+    }
+    form{
+        padding: 2% 4%;
+        font-weight: bold;
+    }
+    .content{
+        margin: 2% 0;
+    }
+    input, select{
+        margin: 2% 0;
+    }
+    .data, .local, .quarto, .preferencia{
+        display: flex;
+        flex-direction: column;
+    }
+    .preferencia div{
+        margin: 2% 0;
+    }
+    .data div, .local div{
+        width: 100%;
+    }
+    button{
+        margin: 2% 0;
+        width: 100%;
+        text-align: center;
+    }
+    .ofertas h1{
+        margin: 2% 0;
+        font-weight: 500;
+    }
+    .ofertas p{
+        margin: 5% 0
+    }
+    .galeria-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .destaque, .comum{
+        width: 100%;
+        height: 100%;
+    }
+    .destaque figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .destaque figcaption{
+        width: 100%;
+        
+    }
+    .destaque img{
+        height: 100%;
+        width: 100%;
+    }
+    .comum div{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .comum figure{
+        display: flex;
+    }
+    .natureza h1{
+        font-weight: 500;
+        margin-bottom: 2%;
+    }
+    .natureza p{
+        margin-bottom: 5%;
+    }
+    .galeria-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .galeria-2 div{
+        width: 100%;
+    }
+    .galeria-2 div figcaption{
+        margin: 0;
+        padding: 0;
+    }
+    .galeria-2 figcaption p:first-child{
+        font-size: large;
+        font-weight: 500;
+        padding: 4% 2%;
+        margin: 0;
+    }
+    figcaption p:nth-child(2){
+        padding-bottom: 5%;
+        padding-left: 2%;
+        font-weight: 200;
+    }
+    footer{
+        margin: 1%;
+    }
+    .rodape{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 2%;
+    }
+    .rodape-conteudo{
+        width: 100%;
+    }
+    .rodape-conteudo h2{
+        text-align: center;
+        width: 100%;
+    }
+    .rodape-conteudo div{
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+/* Resposividade de 541px até 768px */
+@media (min-width:541px) and (max-width:769px){
+    .limite{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .formulario-conteudo h2{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2% 0;
+    }
+    .formulario-conteudo label .formulario-conteudo select{
+        font-size: medium;
+        font-weight: normal;
+    }
+    button{
+        width: 100%;
+        font-weight: 600;
+    }
+    .quarto{
+        width: 35%;
+    }
+    .preferencia{
+        width: 90%;
+    }
+    .ofertas h1{
+        padding: 2% 0;
+    }
+    .galeria-1{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .destaque, .comum, .comum div{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .destaque figure, .comum figure{
+        width: 100%;
+        display: flex; 
+    }
+    .destaque figcaption, .comum figcaption{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: large;
+    }
+    .destaque img, .comum img{
+        width: 100%;
+    }
+    .natureza h1{
+        font-weight: 500;
+        margin-bottom: 2%;
+    }
+    .natureza p:nth-child(2){
+        margin: 2% 0;
+    }
+    .natureza p:first-child{
+        font-size: large;
+        font-weight: 600;
+        margin: 0 2%;
+    }
+   .galeria-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+   }
+   .galeria-2 div{
+    width: 100%;
+    margin: 2% 0;
+   }
+   .galeria-2 figcaption p:nth-child(2){
+    margin: 0 2%;
+   }
+   footer{
+    width: 100%;
+   }
+   .rodape{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 2%;
+}
+.rodape-conteudo{
+    width: 100%;
+}
+.rodape-conteudo h2{
+    text-align: center;
+    width: 100%;
+}
+.rodape-conteudo div{
+    width: 90%;
+    margin: 0 5%;
+}
+}
+
+/* Responsividade para telas maiores que 770px */
+@media (min-width:770px){
+    .limite{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .formulario-conteudo h2{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2% 0;
+    }
+    .formulario-conteudo label .formulario-conteudo select{
+        font-size: medium;
+        font-weight: normal;
+    }
+    footer{
+        width: 100%;
+       }
+       .rodape{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        margin: 0;
+        padding-top: 2%;
+    }
+    .rodape-conteudo{
+        width: 45%;
+        margin: 0 5%;
+    }
+    .rodape-conteudo h2{
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .rodape-conteudo div{
+        width: 100%;
+
+    }
+}
