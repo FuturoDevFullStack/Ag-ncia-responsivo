@@ -62,10 +62,13 @@ header{
 }
 .content{
     width: 100%;
-    padding: 1% 0;
+    /* padding: 1% 0; */
 }
-label{
+label, select{
     margin: 2% 0;
+}
+.local div select{
+    padding: 1% 0;
 }
 input:hover{
     background-color: rgba(234,234,234,255);
@@ -119,19 +122,19 @@ input{
     flex-direction: column;
 }
 .quarto{
-    width: 50%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
 #titulo-quarto{
-    margin: 2% 0;
+    margin-top: 2%;
 }
 .quarto div{
-    margin: 5% 0;
+    margin: 4% 0;
 }
 .preferencia{
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
 }
 .preferencia div{
@@ -181,6 +184,9 @@ button{
     width: 100%;
     background: rgb(0 0 0 / 50%);
 }
+.destaque figcaption p{
+    margin-left: 2%;
+}
 .comum{
     width: calc(50% - 10px);
     height: 100%;
@@ -209,6 +215,9 @@ button{
     bottom: 0;
     background: rgb(0 0 0 / 50%);
     color: #fff;
+}
+.comum div figcaption p{
+        margin-left: 2%;
 }
 .galeria-2{
     width: 100%;
